@@ -22,7 +22,7 @@ class Settings(BaseSettings):
             return v
         raise ValueError(v)
     
-    PROJECT_NAME: str
+    PROJECT_NAME: Optional[str] = "country-backend"
 
     POSTGRES_SERVER: str
     POSTGRES_USER: str
@@ -42,6 +42,11 @@ class Settings(BaseSettings):
             path=f"/{values.get('POSTGRES_DB') or ''}",
         )
     
+    COUNTRIES_DATA_DIR: Optional[Union[str, Path]] = None
+    @validator("COUNTRIES_DATA_DIR", pre=True)
+    def assemble_countries_data(cls, v: Optional[str], values: Dict[str, Any]):
+        return project_root.parent / v
+
     class Config:
         case_sensitive = True
 

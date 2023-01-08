@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 
+from app.core.config import settings
 from app.schemas.country import Country
 
 app = FastAPI()

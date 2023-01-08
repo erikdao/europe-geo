@@ -12,6 +12,14 @@ class CountryBase(BaseModel):
     internet_country_code: Optional[str] = None
     flag_file_name: Optional[str] = None
 
+class CountryCreate(CountryBase):
+    pass
+
+
+class CountryUpdate(CountryBase):
+    name: Optional[str] = None
+    capital: Optional[str] = None
+
 
 class Country(CountryBase):
     id: Optional[int] = None
