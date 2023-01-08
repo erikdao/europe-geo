@@ -15,9 +15,9 @@ def get_all_countries(db: Session = Depends(deps.get_db)) -> Any:
     return crud.country.get_multi(db)
 
 
-@router.get("/countries/{country_id}", response_model=schemas.Country)
-def get_country_by_id(db: Session = Depends(deps.get_db), country_id: int = None):
-    return crud.country.get(db, id=country_id)
+@router.get("/countries/{slug}", response_model=schemas.Country)
+def get_country_by_id(db: Session = Depends(deps.get_db), slug: str = None):
+    return crud.country.get_by_slug(db, slug=slug)
 
 
 app.include_router(router, prefix=settings.API_V1_STR)
