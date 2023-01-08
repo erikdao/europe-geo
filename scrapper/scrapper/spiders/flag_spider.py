@@ -76,6 +76,10 @@ class FlagSpider(scrapy.Spider):
         for key, value in self.countries.items():
             country_suffix = value.replace(" ", "_")
             url = "".join([self.base_url, country_suffix])
+            # Special surgery for Georgia
+            if key == "georgia":
+                url += "_(country)"
+
             yield scrapy.Request(url=url, callback=self.parse, cb_kwargs=dict(country_url=key, country=value))
         
     def parse(self, response, **kwargs):

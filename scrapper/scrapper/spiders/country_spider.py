@@ -89,6 +89,11 @@ class CountrySpider(scrapy.Spider):
             "internet_country_code": 'div[@id="communications"]/div[5]/p/text()'
         }
 
+        # Ad-hoc surgery for some countries as the structure of their
+        # pages on cia.gov are different
+        if country_url == "kosovo" or country_url == "serbia":
+            xpath_dict["internet_country_code"] = 'div[@id="communications"]/div[4]/p/text()'
+
         country_item = CountryItem()
         country_item["name"] = country
         country_item["country_url"] = country_url.replace("-", "_")
