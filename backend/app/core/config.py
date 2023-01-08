@@ -21,7 +21,7 @@ class Settings(BaseSettings):
         elif isinstance(v, (list, str)):
             return v
         raise ValueError(v)
-    
+
     PROJECT_NAME: Optional[str] = "country-backend"
 
     POSTGRES_SERVER: str
@@ -41,8 +41,9 @@ class Settings(BaseSettings):
             host=values.get("POSTGRES_SERVER"),
             path=f"/{values.get('POSTGRES_DB') or ''}",
         )
-    
+
     COUNTRIES_DATA_DIR: Optional[Union[str, Path]] = None
+
     @validator("COUNTRIES_DATA_DIR", pre=True)
     def assemble_countries_data(cls, v: Optional[str], values: Dict[str, Any]):
         return project_root.parent / v
@@ -51,4 +52,6 @@ class Settings(BaseSettings):
         case_sensitive = True
 
 
-settings = Settings(_env_file=os.path.join(project_root, ".env"), _env_file_encoding="utf-8")
+settings = Settings(
+    _env_file=os.path.join(project_root, ".env"), _env_file_encoding="utf-8"
+)

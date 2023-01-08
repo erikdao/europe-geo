@@ -1,32 +1,23 @@
-from fastapi import FastAPI
+from typing import Any, List
 
+from fastapi import FastAPI, APIRouter, Depends
+from sqlalchemy.orm import Session
+
+from app import deps, schemas, crud
 from app.core.config import settings
-from app.schemas.country import Country
 
-app = FastAPI()
+app = FastAPI(openapi_url=f"{settings.API_V1_STR}/openapi.json")
+router = APIRouter()
 
-countries = [
-    {
-        "name": "France",
-        "area": 643801.0,
-        "population": 68305148.0,
-        "capital": "Paris",
-        "gdp_per_capita": 42000.0,
-        "internet_country_code": "metropolitan France - .fr; French Guiana - .gf; Guadeloupe - .gp; Martinique - .mq; Mayotte - .yt; Reunion - .re",
-        "flag_file_name": "250px-Flag_of_France.svg.png"
-    },
-    {
-        "name": "Sweden",
-        "area": 450295.0,
-        "population": 10483647.0,
-        "capital": "Stockholm",
-        "gdp_per_capita": 50700.0,
-        "internet_country_code": ".se",
-        "flag_file_name": "255px-Flag_of_Sweden.svg.png"
-    }
-]
 
-@app.get("/")
-async def root():
-    out = [Country(**item) for item in countries]
-    return out    
+@router.get("/countries", response_model=List[schemas.Country])
+def get_all_countries(db: Session = Depends(deps.get_db)) -> Any:
+    return crud.country.get_multi(db)
+
+
+@router.get("/countries/{country_id}", response_model=schemas.Country)
+def get_country_by_id(db: Session = Depends(deps.get_db), country_id: int = None):
+    return crud.country.get(db, id=country_id)
+
+
+app.include_router(router, prefix=settings.API_V1_STR)
