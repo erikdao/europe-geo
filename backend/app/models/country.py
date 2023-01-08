@@ -5,7 +5,8 @@ from app.db.base_class import Base
 
 class Country(Base):
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True, nullable=False)
+    name = Column(String, index=False, nullable=False)
+    slug = Column(String, index=True, nullable=False)
     capital = Column(String, nullable=False)
     area = Column(
         Numeric(18, 2, decimal_return_scale=None, asdecimal=False),

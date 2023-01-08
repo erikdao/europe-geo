@@ -5,6 +5,7 @@ from pydantic import BaseModel
 
 class CountryBase(BaseModel):
     name: str = None
+    slug: Optional[str] = None
     capital: str = None
     area: Optional[float] = None
     population: Optional[float] = None
