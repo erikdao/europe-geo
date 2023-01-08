@@ -5,6 +5,6 @@
   "population": 142021981.0,
   "capital": "Moscow",
   "gdp_per_capita": 26500.0,
-  "internet_country_code": ".ru; note - Russia also has responsibility for a legacy domain \".su\" that was allocated to the Soviet Union and is being phased out",
+  "internet_country_code": ".ru",
   "flag_file_name": "250px-Flag_of_Russia.svg.png"
 }

@@ -26,9 +26,9 @@ class CountryItemPipeline:
             "slug": item["slug"],
             "area": self._process_item_area(item),
             "population": self._process_item_population(item),
-            "capital": item["capital"],
+            "capital": self._process_item_capital(item),
             "gdp_per_capita": self._process_item_gdp_per_capita(item),
-            "internet_country_code": item["internet_country_code"],
+            "internet_country_code": self._process_internet_code(item),
         }
 
         file_name = item["country_url"] + ".json"
@@ -51,6 +51,28 @@ class CountryItemPipeline:
         if s.startswith("$"):
             s = s.replace("$", "")
         return atof(s)
+    
+    def _process_internet_code(self, item) -> str:
+        """Only take the first internet code if there are many of them"""
+        icc = item.get("internet_country_code", "")
+        if not ";" in icc:
+            return icc
+        
+        icc = icc.split(";")[0].strip()
+        if not "-" in icc:
+            return icc
+        
+        icc = icc.split("-")[-1].strip()
+        return icc
+
+    def _process_item_capital(self, item) -> str:
+        """Only take the first name of capital"""
+        capital = item.get("capital", "")
+        if not ";" in capital:
+            return capital
+        
+        return capital.split(";")[0].strip()
+
 
 class CustomFlagImageNamePipeline(ImagesPipeline):
     def get_media_requests(self, item, info):
