@@ -96,6 +96,7 @@ class CountrySpider(scrapy.Spider):
 
         country_item = CountryItem()
         country_item["name"] = country
+        country_item["slug"] = country_url
         country_item["country_url"] = country_url.replace("-", "_")
 
         for key, value in xpath_dict.items():

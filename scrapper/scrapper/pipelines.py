@@ -23,6 +23,7 @@ class CountryItemPipeline:
         # Convert string to numbers for some attributes
         out_item = {
             "name": item["name"],
+            "slug": item["slug"],
             "area": self._process_item_area(item),
             "population": self._process_item_population(item),
             "capital": item["capital"],

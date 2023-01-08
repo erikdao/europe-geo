@@ -8,6 +8,7 @@ from scrapy import Field, Item
 
 class CountryItem(Item):
     name = Field()
+    slug = Field()
     capital = Field()
     area = Field()
     population = Field()
