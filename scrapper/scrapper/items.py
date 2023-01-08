@@ -13,6 +13,7 @@ class CountryItem(Item):
     population = Field()
     gdp_per_capita = Field()
     country_url = Field()
+    internet_country_code = Field()
 
 
 class FlagItem(Item):

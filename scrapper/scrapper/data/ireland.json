@@ -4,5 +4,6 @@
   "population": 5275004.0,
   "capital": "Dublin",
   "gdp_per_capita": 89700.0,
+  "internet_country_code": ".ie",
   "flag_file_name": "255px-Flag_of_Ireland.svg.png"
 }

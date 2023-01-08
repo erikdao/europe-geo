@@ -27,6 +27,7 @@ class CountryItemPipeline:
             "population": self._process_item_population(item),
             "capital": item["capital"],
             "gdp_per_capita": self._process_item_gdp_per_capita(item),
+            "internet_country_code": item["internet_country_code"],
         }
 
         file_name = item["country_url"] + ".json"

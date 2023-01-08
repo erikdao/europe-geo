@@ -85,7 +85,8 @@ class CountrySpider(scrapy.Spider):
             "area": 'div[@id="geography"]/div[4]/p/text()',
             "population": 'div[@id="people-and-society"]/div[1]/p/text()',
             "capital": 'div[@id="government"]/div[3]/p/text()',
-            "gdp_per_capita": 'div[@id="economy"]/div[4]/p/text()'
+            "gdp_per_capita": 'div[@id="economy"]/div[4]/p/text()',
+            "internet_country_code": 'div[@id="communications"]/div[5]/p/text()'
         }
 
         country_item = CountryItem()

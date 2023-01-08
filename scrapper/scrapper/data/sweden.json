@@ -4,5 +4,6 @@
   "population": 10483647.0,
   "capital": "Stockholm",
   "gdp_per_capita": 50700.0,
+  "internet_country_code": ".se",
   "flag_file_name": "255px-Flag_of_Sweden.svg.png"
 }

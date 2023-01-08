@@ -4,5 +4,6 @@
   "population": 1211524.0,
   "capital": "Tallinn",
   "gdp_per_capita": 35600.0,
+  "internet_country_code": ".ee",
   "flag_file_name": "255px-Flag_of_Estonia.svg.png"
 }

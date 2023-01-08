@@ -4,5 +4,6 @@
   "population": 67791400.0,
   "capital": "London",
   "gdp_per_capita": 41600.0,
+  "internet_country_code": ".uk",
   "flag_file_name": "255px-Flag_of_the_United_Kingdom.svg.png"
 }

@@ -3,5 +3,6 @@
   "area": 69700.0,
   "population": 4935518.0,
   "capital": "Tbilisi",
-  "gdp_per_capita": 14100.0
+  "gdp_per_capita": 14100.0,
+  "internet_country_code": ".ge"
 }
