@@ -1,8 +1,8 @@
 {
-  "country": "Moldova",
-  "area": "33,851 sq km",
-  "population": "3,287,326 (2022 est.)",
+  "name": "Moldova",
+  "area": 33851.0,
+  "population": 3287326.0,
   "capital": "Chisinau in Moldovan (Kishinev in Russian)",
-  "gdp_per_capita": "$12,300 (2020 est.)",
+  "gdp_per_capita": 12300.0,
   "flag_file_name": "255px-Flag_of_Moldova.svg.png"
 }

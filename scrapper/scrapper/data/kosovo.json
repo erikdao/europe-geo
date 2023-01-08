@@ -1,8 +1,8 @@
 {
-  "country": "Kosovo",
-  "area": "10,887 sq km",
-  "population": "1,952,701 (2022 est.)",
+  "name": "Kosovo",
+  "area": 10887.0,
+  "population": 1952701.0,
   "capital": "Pristina (Prishtine, Prishtina)",
-  "gdp_per_capita": "$10,800 (2020 est.)",
+  "gdp_per_capita": 10800.0,
   "flag_file_name": "238px-Flag_of_Kosovo.svg.png"
 }

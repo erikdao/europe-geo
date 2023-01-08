@@ -1,8 +1,8 @@
 {
-  "country": "Lithuania",
-  "area": "65,300 sq km",
-  "population": "2,683,546 (2022 est.)",
+  "name": "Lithuania",
+  "area": 65300.0,
+  "population": 2683546.0,
   "capital": "Vilnius",
-  "gdp_per_capita": "$36,700 (2020 est.)",
+  "gdp_per_capita": 36700.0,
   "flag_file_name": "255px-Flag_of_Lithuania.svg.png"
 }

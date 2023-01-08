@@ -1,8 +1,8 @@
 {
-  "country": "Poland",
-  "area": "312,685 sq km",
-  "population": "38,093,101 (2022 est.)",
+  "name": "Poland",
+  "area": 312685.0,
+  "population": 38093101.0,
   "capital": "Warsaw",
-  "gdp_per_capita": "$32,200 (2020 est.)",
+  "gdp_per_capita": 32200.0,
   "flag_file_name": "255px-Flag_of_Poland.svg.png"
 }

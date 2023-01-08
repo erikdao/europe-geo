@@ -1,8 +1,8 @@
 {
-  "country": "Serbia",
-  "area": "77,474 sq km",
-  "population": "6,739,471 (2022 est.)",
+  "name": "Serbia",
+  "area": 77474.0,
+  "population": 6739471.0,
   "capital": "Belgrade (Beograd)",
-  "gdp_per_capita": "$18,200 (2020 est.)",
+  "gdp_per_capita": 18200.0,
   "flag_file_name": "255px-Flag_of_Serbia.svg.png"
 }

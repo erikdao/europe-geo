@@ -1,8 +1,8 @@
 {
-  "country": "Denmark",
-  "area": "43,094 sq km",
-  "population": "5,920,767 (2022 est.)",
+  "name": "Denmark",
+  "area": 43094.0,
+  "population": 5920767.0,
   "capital": "Copenhagen",
-  "gdp_per_capita": "$55,900 (2020 est.)",
+  "gdp_per_capita": 55900.0,
   "flag_file_name": "225px-Flag_of_Denmark.svg.png"
 }

@@ -62,10 +62,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-    'scrapper.pipelines.CustomFlagImageNamePipeline': 1,
-    'scrapper.pipelines.ScrapperPipeline': 300,
-}
+# ITEM_PIPELINES = {
+#     'scrapper.pipelines.CountryItemPipeline': 100,
+#     'scrapper.pipelines.CustomFlagImageNamePipeline': 200,
+# }
 IMAGES_STORE = 'scrapper/data/images'
 FILES_RESULT_FIELD = 'file_name'
 

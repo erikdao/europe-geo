@@ -1,8 +1,8 @@
 {
-  "country": "Spain",
-  "area": "505,370 sq km",
-  "population": "47,163,418 (2022 est.)",
+  "name": "Spain",
+  "area": 505370.0,
+  "population": 47163418.0,
   "capital": "Madrid",
-  "gdp_per_capita": "$36,200 (2020 est.)",
+  "gdp_per_capita": 36200.0,
   "flag_file_name": "200px-Bandera_de_Espa%C3%B1a.svg.png"
 }

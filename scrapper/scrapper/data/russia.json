@@ -1,8 +1,8 @@
 {
-  "country": "Russia",
-  "area": "17,098,242 sq km",
-  "population": "142,021,981 (2022 est.)",
+  "name": "Russia",
+  "area": 17098242.0,
+  "population": 142021981.0,
   "capital": "Moscow",
-  "gdp_per_capita": "$26,500 (2020 est.)",
+  "gdp_per_capita": 26500.0,
   "flag_file_name": "250px-Flag_of_Russia.svg.png"
 }

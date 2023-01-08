@@ -1,8 +1,8 @@
 {
-  "country": "Slovenia",
-  "area": "20,273 sq km",
-  "population": "2,101,208 (2022 est.)",
+  "name": "Slovenia",
+  "area": 20273.0,
+  "population": 2101208.0,
   "capital": "Ljubljana",
-  "gdp_per_capita": "$36,500 (2020 est.)",
+  "gdp_per_capita": 36500.0,
   "flag_file_name": "255px-Flag_of_Slovenia.svg.png"
 }

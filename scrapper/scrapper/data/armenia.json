@@ -1,8 +1,8 @@
 {
-  "country": "Armenia",
-  "area": "29,743 sq km",
-  "population": "3,000,756 (2022 est.)",
+  "name": "Armenia",
+  "area": 29743.0,
+  "population": 3000756.0,
   "capital": "Yerevan",
-  "gdp_per_capita": "$12,600 (2020 est.)",
+  "gdp_per_capita": 12600.0,
   "flag_file_name": "255px-Flag_of_Armenia.svg.png"
 }

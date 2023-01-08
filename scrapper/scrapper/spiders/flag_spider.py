@@ -12,6 +12,11 @@ data_path = os.path.join(project_root, "data", "images")
 
 class FlagSpider(scrapy.Spider):
     name = "flags"
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'scrapper.pipelines.CustomFlagImageNamePipeline': 200
+        }
+    }
 
     def __init__(self, name=None, **kwargs):
         super().__init__(name, **kwargs)

@@ -1,8 +1,8 @@
 {
-  "country": "Andorra",
-  "area": "468 sq km",
-  "population": "85,560 (2022 est.)",
+  "name": "Andorra",
+  "area": 468.0,
+  "population": 85560.0,
   "capital": "Andorra la Vella",
-  "gdp_per_capita": "$49,900 (2015 est.)",
+  "gdp_per_capita": 49900.0,
   "flag_file_name": "243px-Flag_of_Andorra.svg.png"
 }

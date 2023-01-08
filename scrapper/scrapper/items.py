@@ -3,15 +3,18 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Field, Item
 
 
-class ScrapperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class CountryItem(Item):
+    name = Field()
+    capital = Field()
+    area = Field()
+    population = Field()
+    gdp_per_capita = Field()
+    country_url = Field()
 
 
-class FlagItem(scrapy.Item):
-    file_name = scrapy.Field()
-    image_urls= scrapy.Field()
+class FlagItem(Item):
+    file_name = Field()
+    image_urls= Field()

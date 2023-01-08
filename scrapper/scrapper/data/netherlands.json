@@ -1,8 +1,8 @@
 {
-  "country": "Netherlands",
-  "area": "41,543 sq km",
-  "population": "17,400,824 (2022 est.)",
+  "name": "Netherlands",
+  "area": 41543.0,
+  "population": 17400824.0,
   "capital": "Amsterdam; note - The Hague is the seat of government",
-  "gdp_per_capita": "$54,200 (2020 est.)",
+  "gdp_per_capita": 54200.0,
   "flag_file_name": "255px-Flag_of_the_Netherlands.svg.png"
 }

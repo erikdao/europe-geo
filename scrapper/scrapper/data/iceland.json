@@ -1,8 +1,8 @@
 {
-  "country": "Iceland",
-  "area": "103,000 sq km",
-  "population": "357,603 (2022 est.)",
+  "name": "Iceland",
+  "area": 103000.0,
+  "population": 357603.0,
   "capital": "Reykjavik",
-  "gdp_per_capita": "$52,300 (2020 est.)",
+  "gdp_per_capita": 52300.0,
   "flag_file_name": "236px-Flag_of_Iceland.svg.png"
 }

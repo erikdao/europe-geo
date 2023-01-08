@@ -1,8 +1,8 @@
 {
-  "country": "Latvia",
-  "area": "64,589 sq km",
-  "population": "1,842,226 (2022 est.)",
+  "name": "Latvia",
+  "area": 64589.0,
+  "population": 1842226.0,
   "capital": "Riga",
-  "gdp_per_capita": "$29,900 (2020 est.)",
+  "gdp_per_capita": 29900.0,
   "flag_file_name": "255px-Flag_of_Latvia.svg.png"
 }

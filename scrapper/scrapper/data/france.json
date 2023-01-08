@@ -1,8 +1,8 @@
 {
-  "country": "France",
-  "area": "643,801 sq km ; 551,500 sq km (metropolitan France)",
-  "population": "68,305,148 (2022 est.)",
+  "name": "France",
+  "area": 643801.0,
+  "population": 68305148.0,
   "capital": "Paris",
-  "gdp_per_capita": "$42,000 (2020 est.)",
+  "gdp_per_capita": 42000.0,
   "flag_file_name": "250px-Flag_of_France.svg.png"
 }

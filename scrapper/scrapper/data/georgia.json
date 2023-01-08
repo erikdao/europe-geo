@@ -1,7 +1,7 @@
 {
-  "country": "Georgia",
-  "area": "69,700 sq km",
-  "population": "4,935,518 (2022 est.)",
+  "name": "Georgia",
+  "area": 69700.0,
+  "population": 4935518.0,
   "capital": "Tbilisi",
-  "gdp_per_capita": "$14,100 (2020 est.)"
+  "gdp_per_capita": 14100.0
 }

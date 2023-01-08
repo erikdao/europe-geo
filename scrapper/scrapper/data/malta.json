@@ -1,8 +1,8 @@
 {
-  "country": "Malta",
-  "area": "316 sq km",
-  "population": "464,186 (2022 est.)",
+  "name": "Malta",
+  "area": 316.0,
+  "population": 464186.0,
   "capital": "Valletta",
-  "gdp_per_capita": "$39,200 (2020 est.)",
+  "gdp_per_capita": 39200.0,
   "flag_file_name": "255px-Flag_of_Malta.svg.png"
 }

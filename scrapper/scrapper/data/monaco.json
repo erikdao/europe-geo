@@ -1,8 +1,8 @@
 {
-  "country": "Monaco",
-  "area": "2 sq km",
-  "population": "31,400 (2022 est.)",
+  "name": "Monaco",
+  "area": 2.0,
+  "population": 31400.0,
   "capital": "Monaco",
-  "gdp_per_capita": "$115,700 (2015 est.)",
+  "gdp_per_capita": 115700.0,
   "flag_file_name": "213px-Flag_of_Monaco.svg.png"
 }

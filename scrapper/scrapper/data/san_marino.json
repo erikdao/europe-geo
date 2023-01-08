@@ -1,8 +1,8 @@
 {
-  "country": "San Marino",
-  "area": "61 sq km",
-  "population": "34,682 (2022 est.)",
+  "name": "San Marino",
+  "area": 61.0,
+  "population": 34682.0,
   "capital": "San Marino (city)",
-  "gdp_per_capita": "$60,800 (2019 est.) note: data are in 2017 dollars",
+  "gdp_per_capita": 60800.0,
   "flag_file_name": "227px-Flag_of_San_Marino.svg.png"
 }

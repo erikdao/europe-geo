@@ -1,8 +1,8 @@
 {
-  "country": "Switzerland",
-  "area": "41,277 sq km",
-  "population": "8,508,698 (2022 est.)",
+  "name": "Switzerland",
+  "area": 41277.0,
+  "population": 8508698.0,
   "capital": "Bern",
-  "gdp_per_capita": "$68,400 (2020 est.)",
+  "gdp_per_capita": 68400.0,
   "flag_file_name": "170px-Flag_of_Switzerland_%28Pantone%29.svg.png"
 }

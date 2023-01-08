@@ -1,8 +1,8 @@
 {
-  "country": "Italy",
-  "area": "301,340 sq km",
-  "population": "61,095,551 (2022 est.)",
+  "name": "Italy",
+  "area": 301340.0,
+  "population": 61095551.0,
   "capital": "Rome",
-  "gdp_per_capita": "$39,000 (2020 est.)",
+  "gdp_per_capita": 39000.0,
   "flag_file_name": "255px-Flag_of_Italy.svg.png"
 }

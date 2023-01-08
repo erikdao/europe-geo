@@ -1,8 +1,8 @@
 {
-  "country": "Montenegro",
-  "area": "13,812 sq km",
-  "population": "604,966 (2022 est.)",
+  "name": "Montenegro",
+  "area": 13812.0,
+  "population": 604966.0,
   "capital": "Podgorica; note - Cetinje retains the status of \"Old Royal Capital\"",
-  "gdp_per_capita": "$18,300 (2020 est.)",
+  "gdp_per_capita": 18300.0,
   "flag_file_name": "255px-Flag_of_Montenegro.svg.png"
 }

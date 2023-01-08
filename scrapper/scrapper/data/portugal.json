@@ -1,8 +1,8 @@
 {
-  "country": "Portugal",
-  "area": "92,090 sq km",
-  "population": "10,242,081 (2022 est.)",
+  "name": "Portugal",
+  "area": 92090.0,
+  "population": 10242081.0,
   "capital": "Lisbon",
-  "gdp_per_capita": "$32,200 (2020 est.)",
+  "gdp_per_capita": 32200.0,
   "flag_file_name": "255px-Flag_of_Portugal.svg.png"
 }

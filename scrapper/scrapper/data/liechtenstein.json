@@ -1,8 +1,8 @@
 {
-  "country": "Liechtenstein",
-  "area": "160 sq km",
-  "population": "39,711 (2022 est.)",
+  "name": "Liechtenstein",
+  "area": 160.0,
+  "population": 39711.0,
   "capital": "Vaduz",
-  "gdp_per_capita": "$139,100 (2009 est.)",
+  "gdp_per_capita": 139100.0,
   "flag_file_name": "255px-Flag_of_Liechtenstein.svg.png"
 }

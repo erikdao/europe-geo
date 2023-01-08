@@ -1,8 +1,8 @@
 {
-  "country": "Albania",
-  "area": "28,748 sq km",
-  "population": "3,095,344 (2022 est.)",
+  "name": "Albania",
+  "area": 28748.0,
+  "population": 3095344.0,
   "capital": "Tirana (Tirane)",
-  "gdp_per_capita": "$13,300 (2020 est.)",
+  "gdp_per_capita": 13300.0,
   "flag_file_name": "238px-Flag_of_Albania.svg.png"
 }

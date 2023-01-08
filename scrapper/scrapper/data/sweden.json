@@ -1,8 +1,8 @@
 {
-  "country": "Sweden",
-  "area": "450,295 sq km",
-  "population": "10,483,647 (2022 est.)",
+  "name": "Sweden",
+  "area": 450295.0,
+  "population": 10483647.0,
   "capital": "Stockholm",
-  "gdp_per_capita": "$50,700 (2020 est.)",
+  "gdp_per_capita": 50700.0,
   "flag_file_name": "255px-Flag_of_Sweden.svg.png"
 }

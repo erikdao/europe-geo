@@ -1,8 +1,8 @@
 {
-  "country": "Norway",
-  "area": "323,802 sq km",
-  "population": "5,553,840 (2022 est.)",
+  "name": "Norway",
+  "area": 323802.0,
+  "population": 5553840.0,
   "capital": "Oslo",
-  "gdp_per_capita": "$63,600 (2020 est.)",
+  "gdp_per_capita": 63600.0,
   "flag_file_name": "234px-Flag_of_Norway.svg.png"
 }

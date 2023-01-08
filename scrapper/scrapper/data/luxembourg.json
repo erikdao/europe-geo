@@ -1,8 +1,8 @@
 {
-  "country": "Luxembourg",
-  "area": "2,586 sq km",
-  "population": "650,364 (2022 est.)",
+  "name": "Luxembourg",
+  "area": 2586.0,
+  "population": 650364.0,
   "capital": "Luxembourg",
-  "gdp_per_capita": "$110,300 (2020 est.)",
+  "gdp_per_capita": 110300.0,
   "flag_file_name": "255px-Flag_of_Luxembourg.svg.png"
 }

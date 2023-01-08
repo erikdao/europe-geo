@@ -1,8 +1,8 @@
 import os
-import json
 from pathlib import Path
 
 import scrapy
+from scrapper.items import CountryItem
 
 current_path = Path(os.path.dirname(__file__))
 project_root = current_path.parent
@@ -11,6 +11,11 @@ data_path = os.path.join(project_root, "data")
 
 class CountrySpider(scrapy.Spider):
     name = "countries"
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'scrapper.pipelines.CountryItemPipeline': 100
+        }
+    }
 
     def __init__(self, name=None, **kwargs):
         super().__init__(name, **kwargs)
@@ -75,7 +80,6 @@ class CountrySpider(scrapy.Spider):
     def parse(self, response, **kwargs):
         country = kwargs.get("country", None)
         country_url = kwargs.get("country_url", None)
-        print("\n\n", country, "\n\n")
 
         xpath_dict = {
             "area": 'div[@id="geography"]/div[4]/p/text()',
@@ -84,15 +88,13 @@ class CountrySpider(scrapy.Spider):
             "gdp_per_capita": 'div[@id="economy"]/div[4]/p/text()'
         }
 
-        data = dict(country=country)
+        country_item = CountryItem()
+        country_item["name"] = country
+        country_item["country_url"] = country_url.replace("-", "_")
+
         for key, value in xpath_dict.items():
             xp = "".join([self.base_xpath, value])
             text = response.xpath(xp).extract_first()
-            data[key] = text.strip() if text is not None else text
+            country_item[key] = text.strip() if text is not None else text
         
-        if "-" in country_url:
-            country_url = country_url.replace("-", "_")
-
-        fname = country_url.lower() + ".json"
-        with open(os.path.join(data_path, fname), "w") as f:
-            json.dump(data, f, indent=2)
+        return country_item

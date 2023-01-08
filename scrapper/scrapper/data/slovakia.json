@@ -1,8 +1,8 @@
 {
-  "country": "Slovakia",
-  "area": "49,035 sq km",
-  "population": "5,431,252 (2022 est.)",
+  "name": "Slovakia",
+  "area": 49035.0,
+  "population": 5431252.0,
   "capital": "Bratislava",
-  "gdp_per_capita": "$30,300 (2020 est.)",
+  "gdp_per_capita": 30300.0,
   "flag_file_name": "255px-Flag_of_Slovakia.svg.png"
 }

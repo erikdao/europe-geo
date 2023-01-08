@@ -1,8 +1,8 @@
 {
-  "country": "Hungary",
-  "area": "93,028 sq km",
-  "population": "9,699,577 (2022 est.)",
+  "name": "Hungary",
+  "area": 93028.0,
+  "population": 9699577.0,
   "capital": "Budapest",
-  "gdp_per_capita": "$31,000 (2020 est.)",
+  "gdp_per_capita": 31000.0,
   "flag_file_name": "255px-Flag_of_Hungary.svg.png"
 }

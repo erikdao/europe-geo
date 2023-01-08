@@ -1,8 +1,8 @@
 {
-  "country": "Croatia",
-  "area": "56,594 sq km",
-  "population": "4,188,853 (2022 est.)",
+  "name": "Croatia",
+  "area": 56594.0,
+  "population": 4188853.0,
   "capital": "Zagreb",
-  "gdp_per_capita": "$26,500 (2020 est.)",
+  "gdp_per_capita": 26500.0,
   "flag_file_name": "255px-Flag_of_Croatia.svg.png"
 }

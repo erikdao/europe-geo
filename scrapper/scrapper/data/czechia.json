@@ -1,8 +1,8 @@
 {
-  "country": "Czech Republic",
-  "area": "78,867 sq km",
-  "population": "10,705,384 (2022 est.)",
+  "name": "Czech Republic",
+  "area": 78867.0,
+  "population": 10705384.0,
   "capital": "Prague",
-  "gdp_per_capita": "$38,300 (2020 est.)",
+  "gdp_per_capita": 38300.0,
   "flag_file_name": "255px-Flag_of_the_Czech_Republic.svg.png"
 }
