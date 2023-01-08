@@ -6,5 +6,5 @@ __pycache__
 *node_modules/
 
 # Environment file
-*.env
+.env
 !.env.example
