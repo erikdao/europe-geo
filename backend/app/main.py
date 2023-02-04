@@ -1,23 +1,24 @@
-from typing import Any, List
+import os
+import json
+from typing import List
+from pathlib import Path
 
-from fastapi import FastAPI, APIRouter, Depends
-from sqlalchemy.orm import Session
+module_path = Path(os.path.abspath(__file__))
+app_path = module_path.parent
+project_root = app_path.parent
 
-from app import deps, schemas, crud
-from app.core.config import settings
+from fastapi import FastAPI
+from app.schemas import Country, transform_countries_data
 
-app = FastAPI(openapi_url=f"{settings.API_V1_STR}/openapi.json")
-router = APIRouter()
-
-
-@router.get("/countries", response_model=List[schemas.Country])
-def get_all_countries(db: Session = Depends(deps.get_db)) -> Any:
-    return crud.country.get_multi(db)
+app = FastAPI()
 
 
-@router.get("/countries/{slug}", response_model=schemas.Country)
-def get_country_by_id(db: Session = Depends(deps.get_db), slug: str = None):
-    return crud.country.get_by_slug(db, slug=slug)
+def get_coutries_data():
+    with open(project_root / "data" / "countries.json", "r") as f:
+        data = json.load(f)
+    return data
 
 
-app.include_router(router, prefix=settings.API_V1_STR)
+@app.get("/")
+async def get_countries() -> List[Country]:
+    return transform_countries_data(get_coutries_data())
